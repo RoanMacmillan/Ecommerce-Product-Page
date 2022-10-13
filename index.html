@@ -35,7 +35,7 @@
       </div>
 
       <div class="right">
-        <span id="notification" style="display: none;">3</span>
+        <span id="notification">3</span>
         <img class="mobile-btn" id="cart" src="./images/icon-cart.svg">
         <img class="mobile-btn" id="avatar" src="./images/image-avatar.png">
 
@@ -51,8 +51,9 @@
 
     <div class="main-container">
 
-      
-      <div class="checkout-modal">
+
+    
+      <div id="anim" class="checkout-modal">
 
 
       <div id="checkout" class="checkout-container">
@@ -61,13 +62,13 @@
           <span>Cart</span>
           <div id="close-test" class="mobile-btn"><img src="./images/icon-close.svg"></div>
         </div>
-        <div class="bottom">
+        <div id="empty" class="bottom">
 
           <span>Your cart is empty.</span>
 
         </div>
 
-        <div class="bottom2">
+        <div id="full" class="bottom2">
 
           <div class="top-child-container">
 
@@ -79,7 +80,7 @@
               <div class="middle-child-container">
 
                 <span>Stan Smith Classic Editi...</span><br>
-            <span>Lorem de ipsum</span>
+            <span>$125.00</span> <span>x</span> <span id="sneaker-amt">3</span> <span id="dollar">$</span><span id="price-total">375.00</span>
 
               </div>
 
@@ -144,14 +145,14 @@
           </div>
         </div>
 
-        <div class="product-count"><span id="plus" class="material-symbols-outlined">
+        <div class="product-count"><span id="remove" class="material-symbols-outlined">
             remove
-          </span>0<span id="remove" class="material-symbols-outlined">
+          </span><span id="item-counter">1</span><span id="plus" class="material-symbols-outlined">
             add
           </span></div>
 
 
-        <button class="checkout"><img class="cart-svg" src="./images/icon-cart.svg">Add to cart</button>
+        <button id="anim-btn" class="checkout"><img class="cart-svg" src="./images/icon-cart.svg">Add to cart</button>
 
       </div>
 
@@ -168,7 +169,7 @@
 
   <div id="modal-wrapper" class="modal">
 
-    <div class="nav-modal">
+    <div id="mob-nav" class="nav-modal slide">
       <div class="top-mobile-nav">
       <img class="hamburger-btn" id="hamburger-close" src="./images/icon-close.svg">
         </div>
