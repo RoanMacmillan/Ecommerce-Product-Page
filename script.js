@@ -28,3 +28,69 @@ function showSlides(n) {
 
 
 
+  // Modals
+
+  const checkoutContainer = document.querySelector('.checkout-container');
+  const container = document.querySelector('.main-container');
+  const mobileBtns = document.querySelectorAll('.mobile-btn');
+  const checkoutModal = document.querySelector('.checkout-modal');
+
+
+  // Checkout modal
+
+  // toggles checkout modal with nav icons
+
+  mobileBtns.forEach((item) => {
+
+
+    item.addEventListener('click', () => {
+
+      checkoutModal.classList.toggle('active');
+    })
+  })
+
+// closes checkout modal when clicking outside
+  
+checkoutModal.addEventListener('click', (e) => {
+
+  if (e.target !== e.currentTarget) {
+
+    return;
+
+} else {
+
+checkoutModal.classList.remove('active');
+
+}
+})
+
+// Mobile menu modal
+
+// toggles mobile menu with hamburger btn
+
+const menuModal = document.querySelector('.modal');
+
+document.querySelectorAll('.hamburger-btn').forEach((item) => {
+
+  item.addEventListener('click', () => {
+
+    menuModal.classList.toggle('active');
+
+  })
+
+})
+
+// closes mobile menu when clicking outside
+  
+menuModal.addEventListener('click', (e) => {
+
+  if (e.target !== e.currentTarget) {
+
+    return;
+
+} else {
+
+menuModal.classList.remove('active');
+
+}
+})
