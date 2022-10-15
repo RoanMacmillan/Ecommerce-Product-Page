@@ -118,6 +118,8 @@ document.getElementById('plus').addEventListener('click', () =>{
 document.getElementById('remove').addEventListener('click', () => {
 
   if (itemCount === 0) {
+
+
     return;
   }
   itemCount--;

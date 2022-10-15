@@ -26,140 +26,176 @@
 
     <div class="main-wrapper">
 
-      
 
-    <div class="nav">
-      <div class="left">
-        <img class="hamburger-btn" id="hamburger-open" src="./images/icon-menu.svg">
-        <img id="logo" src="./images/logo.svg">
+
+      <div class="nav">
+        <div class="left">
+
+          <div class="left-left">
+          <img class="hamburger-btn" id="hamburger-open" src="./images/icon-menu.svg">
+          <img id="logo" src="./images/logo.svg">
+            </div>
+
+            <div class="left-right">
+
+            <a>Collections</a>
+
+            <a>Men</a>
+            <a>Women</a>
+            <a>About</a>
+            <a>Contact</a>
+            </div>
+        </div>
+
+        <div class="right">
+          <span id="notification">3</span>
+          <img class="mobile-btn" id="cart" src="./images/icon-cart.svg">
+          <img class="mobile-btn" id="avatar" src="./images/image-avatar.png">
+
+
+        </div>
+
+
+
+
+
       </div>
 
-      <div class="right">
-        <span id="notification">3</span>
-        <img class="mobile-btn" id="cart" src="./images/icon-cart.svg">
-        <img class="mobile-btn" id="avatar" src="./images/image-avatar.png">
+
+      <div class="main-container">
 
 
+
+        <div id="anim" class="checkout-modal">
+
+
+          <div id="checkout" class="checkout-container">
+
+            <div class="top">
+              <span>Cart</span>
+              <div id="close-test" class="mobile-btn"><img src="./images/icon-close.svg"></div>
+            </div>
+            <div id="empty" class="bottom">
+
+              <span>Your cart is empty.</span>
+
+            </div>
+
+            <div id="full" class="bottom2">
+
+              <div class="top-child-container">
+
+                <div class="left-child-continer">
+                  <img id="smiths1" src="./images/smiths1.jpg">
+
+                </div>
+
+                <div class="middle-child-container">
+
+                  <span>Stan Smith Classic Editi...</span><br>
+                  <span>$125.00</span> <span>x</span> <span id="sneaker-amt">3</span> <span id="dollar">$</span><span
+                    id="price-total">375.00</span>
+
+                </div>
+
+                <div class="right-child-container">
+                  <img id="trash" src="./images/icon-delete.svg">
+
+                </div>
+
+              </div>
+
+              <button id="c-btn" class="checkout">Checkout</button>
+
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="slideshow-container">
+
+        <div class="slideshow">
+
+          <div class="mySlides fade">
+
+            <img class="smiths" src="./images/green1.jpg">
+
+          </div>
+
+          <div class="mySlides fade">
+
+            <img class="smiths" src="./images/green2.jpg">
+
+          </div>
+
+          <div class="mySlides fade">
+
+            <img class="smiths" src="./images/green3.jpg">
+
+          </div>
+
+          <div class="mySlides fade">
+
+            <img class="smiths" src="./images/smiths1.jpg">
+
+          </div>
+
+          <div class="scroll-container">
+            <a id="prev" onclick="plusSlides(-1)"><img src="./images/icon-previous.svg"></a>
+            <a id="next" onclick="plusSlides(1)"> <img src="./images/icon-next.svg"></a>
+          </div>
+        </div>
+
+        <div class="columns">
+
+          <img class="column-img"   src="./images/green1.jpg">
+          <img class="column-img"  src="./images/green2.jpg">
+          <img class="column-img"  src="./images/green3.jpg">
+          <img class="column-img" src="./images/smiths1.jpg">
+
+        </div>
       </div>
 
-      
+        <div class="info">
 
+          <h1 id="test">Adidas Originals</h1>
+
+          <h2>Stan Smiths Classic</h2>
+
+          <p>These low-profile sneakers are your perfect casual wear companion. Featuring a
+            durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+
+          <div class="price-container">
+            <div class="left-child">
+              <span id="price">$125.00</span>
+              <span id="discount">-50%</span>
+            </div>
+
+            <div class="right-child">
+              <span id="last">$250.00</span>
+            </div>
+          </div>
+
+          <div class="btns-container">
+
+            <div class="product-count"><span id="remove" class="material-symbols-outlined">
+                remove
+              </span><span id="item-counter">1</span><span id="plus" class="material-symbols-outlined">
+                add
+              </span></div>
+
+
+            <button id="anim-btn" class="checkout"><img class="cart-svg" src="./images/icon-cart.svg">Add to
+              cart</button>
+          </div>
+        </div>
+
+      </div>
 
 
     </div>
-
-
-    <div class="main-container">
-
-
-    
-      <div id="anim" class="checkout-modal">
-
-
-      <div id="checkout" class="checkout-container">
-
-        <div class="top">
-          <span>Cart</span>
-          <div id="close-test" class="mobile-btn"><img src="./images/icon-close.svg"></div>
-        </div>
-        <div id="empty" class="bottom">
-
-          <span>Your cart is empty.</span>
-
-        </div>
-
-        <div id="full" class="bottom2">
-
-          <div class="top-child-container">
-
-            <div class="left-child-continer">
-            <img id="smiths1" src="./images/smiths1.jpg">
-            
-              </div>
-
-              <div class="middle-child-container">
-
-                <span>Stan Smith Classic Editi...</span><br>
-            <span>$125.00</span> <span>x</span> <span id="sneaker-amt">3</span> <span id="dollar">$</span><span id="price-total">375.00</span>
-
-              </div>
-
-              <div class="right-child-container">
-                <img id="trash" src="./images/icon-delete.svg">
-
-              </div>
-
-          </div>
-
-          <button id="c-btn" class="checkout">Checkout</button>
-
-
-        </div>
-
-      </div>
-
-</div>
-
-      <div class="slideshow">
-
-        <div class="mySlides fade">
-
-          <img class="smiths" src="./images/green1.jpg">
-
-        </div>
-
-        <div class="mySlides fade">
-
-          <img class="smiths" src="./images/green2.jpg">
-
-        </div>
-
-        <div class="mySlides fade">
-
-          <img class="smiths" src="./images/green3.jpg">
-
-        </div>
-        <div class="scroll-container">
-          <a id="prev" onclick="plusSlides(-1)"><img src="./images/icon-previous.svg"></a>
-          <a id="next" onclick="plusSlides(1)"> <img src="./images/icon-next.svg"></a>
-        </div>
-      </div>
-
-      <div class="info">
-
-        <h1 id="test">Adidas Originals</h1>
-
-        <h2>Stan Smiths Classic</h2>
-
-        <p>These low-profile sneakers are your perfect casual wear companion. Featuring a
-          durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
-
-        <div class="price-container">
-          <div class="left-child">
-            <span id="price">$125.00</span>
-            <span id="discount">-50%</span>
-          </div>
-
-          <div class="right-child">
-            <span id="last">$250.00</span>
-          </div>
-        </div>
-
-        <div class="product-count"><span id="remove" class="material-symbols-outlined">
-            remove
-          </span><span id="item-counter">1</span><span id="plus" class="material-symbols-outlined">
-            add
-          </span></div>
-
-
-        <button id="anim-btn" class="checkout"><img class="cart-svg" src="./images/icon-cart.svg">Add to cart</button>
-
-      </div>
-
-    </div>
-
-
-</div>
 
 
 
@@ -171,20 +207,20 @@
 
     <div id="mob-nav" class="nav-modal slide">
       <div class="top-mobile-nav">
-      <img class="hamburger-btn" id="hamburger-close" src="./images/icon-close.svg">
-        </div>
+        <img class="hamburger-btn" id="hamburger-close" src="./images/icon-close.svg">
+      </div>
 
-        <div class="bottom-mobile-nav">
+      <div class="bottom-mobile-nav">
 
-      <a>Collections</a>
-      <a>Men</a>
-      <a>Women</a>
-      <a>About</a>
-      <a>Contact</a>
-
-</div>
+        <a>Collections</a>
+        <a>Men</a>
+        <a>Women</a>
+        <a>About</a>
+        <a>Contact</a>
 
       </div>
+
+    </div>
 
 
   </div>
