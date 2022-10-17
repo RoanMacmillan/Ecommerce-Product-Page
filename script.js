@@ -17,12 +17,20 @@ function currentSlide(n) {
 function showSlides(n) {
     let i;
     let slides = document.getElementsByClassName("mySlides");
+    let thumbnails = document.getElementsByClassName("column-img");
+
     if (n > slides.length) {slideIndex = 1}
     if (n < 1) {slideIndex = slides.length}
     for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
     }
-   
+
+    for (i = 0; i < thumbnails.length; i++) {
+      thumbnails[i].className = thumbnails[i].className.replace(" active", "");
+  }
+    
+    thumbnails[slideIndex-1].className += " active";
+
     slides[slideIndex-1].style.display = "block";
   }
 
@@ -92,8 +100,8 @@ menuModal.addEventListener('click', (e) => {
 
 } else {
 
- menuModal.classList.toggle('transitionm');
- sideMenu.classList.toggle('transitionwidth');
+ menuModal.classList.remove('transitionm');
+ sideMenu.classList.remove('transitionwidth');
 
 
 
@@ -166,3 +174,91 @@ cartCounter.style.display = 'none';
 
 
 })
+
+
+
+
+// Lightbox slideshow //
+
+
+
+// Mobile slideshow //
+
+let slideIndexLight = 1;
+showSlidesLight(slideIndexLight);
+
+// Next/previous controls
+function plusSlidesLight(n) {
+  showSlidesLight(slideIndexLight += n);
+}
+
+function currentSlideLight(n) {
+  showSlidesLight(slideIndexLight = n);
+}
+
+function showSlidesLight(n) {
+    let i;
+    let slidesLight = document.getElementsByClassName("mySlidesLight");
+    let thumbnailsLight = document.getElementsByClassName("column-img-light");
+
+    if (n > slidesLight.length) {slideIndexLight = 1}
+    if (n < 1) {slideIndexLight = slidesLight.length}
+    for (i = 0; i < slidesLight.length; i++) {
+      slidesLight[i].style.display = "none";
+    }
+    for (i = 0; i < thumbnailsLight.length; i++) {
+      thumbnailsLight[i].className = thumbnailsLight[i].className.replace(" active", "");
+  }
+
+
+    slidesLight[slideIndexLight-1].style.display = "block";
+    thumbnailsLight[slideIndexLight-1].className += " active";
+
+  }
+
+
+
+
+
+
+
+  const lightModal = document.getElementById('lightbox-modal');
+
+
+
+document.getElementById('slide-wrap').addEventListener('click', () => {
+
+
+  lightModal.classList.add('active-light');
+
+})
+
+
+
+
+
+  lightModal.addEventListener('click', (e) => {
+
+    if (e.target !== e.currentTarget) {
+  
+      return;
+  
+  } else {
+  
+  lightModal.classList.remove('active-light');
+  
+  }
+  })
+
+
+  document.getElementById('light-x').addEventListener('click', () => {
+
+    lightModal.classList.remove('active-light');
+
+
+
+  })
+
+
+
+  
