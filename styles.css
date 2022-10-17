@@ -15,15 +15,15 @@ main {
     width: 375px;
     margin: 0 auto;
     background-color: white;
-    
+
 }
 
 .main-container {
 
     position: relative;
-    
 
-    
+
+
 }
 
 .columns {
@@ -31,41 +31,53 @@ main {
     display: none;
 }
 
-#hamburger-open, #hamburger-close, #avatar {
+#hamburger-open,
+#hamburger-close,
+#avatar {
 
     cursor: pointer;
-    
+
 }
 
 .checkout-container {
-    
+
     z-index: 1;
     width: 351px;
     background-color: white;
     border-radius: 5px;
-    box-shadow:0 0.6rem 2rem rgba(0,0,0,0.2);
+    box-shadow: 0 0.6rem 2rem rgba(0, 0, 0, 0.2);
     margin-top: -20px;
-    
+
 }
 
 .checkout-modal {
 
     display: none;
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgba(0,0,0,0.2); /* Black w/ opacity */
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.2);
+    /* Black w/ opacity */
 
     justify-content: center;
-    align-items:baseline;
-  }
+    align-items: baseline;
+}
 
+a:hover {
 
+    cursor: pointer;
+}
 
 .active {
 
@@ -85,7 +97,7 @@ main {
 
 .top img {
 
-    cursor:pointer;
+    cursor: pointer;
 }
 
 .bottom {
@@ -110,7 +122,7 @@ main {
 #c-btn {
 
     box-shadow: none;
-    
+
 }
 
 #trash {
@@ -165,6 +177,11 @@ main {
     display: none;
 }
 
+#notification:hover {
+
+    cursor: pointer;
+}
+
 .right {
 
     position: relative;
@@ -184,9 +201,14 @@ main {
 
     margin-right: 15px;
     cursor: pointer;
+
 }
 
-h1, h2, p {
+
+
+h1,
+h2,
+p {
 
     margin: 0;
     margin-bottom: 10px;
@@ -195,7 +217,7 @@ h1, h2, p {
 
 .info {
 
-padding: 20px;
+    padding: 20px;
 
 
 }
@@ -236,6 +258,7 @@ h2 {
     padding: 3px 6px 3px 6px;
     border-radius: 5px;
 }
+
 .right-child span {
 
     font-weight: 700;
@@ -245,7 +268,7 @@ h2 {
 
     font-weight: 700;
     font-size: 1.9em;
-    
+
 }
 
 button {
@@ -260,9 +283,10 @@ button {
     font-size: 1em;
     color: white;
     background-color: #0EAD69;
-    box-shadow:0 0.6rem 2rem rgba(0,0,0,0.2);
+    box-shadow: 0 0.6rem 2rem rgba(0, 0, 0, 0.2);
     cursor: pointer;
 }
+
 
 .product-count {
 
@@ -270,14 +294,14 @@ button {
     padding-top: 15px;
     padding-bottom: 15px;
     border-radius: 5px;
-    background-color:hsl(223, 64%, 98%);
+    background-color: hsl(223, 64%, 98%);
     text-align: center;
     font-family: 'Kumbh Sans', sans-serif;
     font-weight: 700;
     margin-bottom: 25px;
     display: flex;
     justify-content: space-between;
-    
+
 }
 
 p {
@@ -292,7 +316,7 @@ p {
 
 #test {
 
-color: #0EAD69;
+    color: #0EAD69;
 
 }
 
@@ -302,7 +326,8 @@ color: #0EAD69;
     color: hsl(220, 14%, 75%);
 }
 
-#plus, #remove {
+#plus,
+#remove {
 
     color: #0EAD69;
     font-weight: 700;
@@ -316,6 +341,7 @@ color: #0EAD69;
 .slideshow {
 
     position: relative;
+
 }
 
 .mySlides {
@@ -323,7 +349,8 @@ color: #0EAD69;
     display: none;
 }
 
-#prev, #next {
+#prev,
+#next {
 
     cursor: pointer;
     position: absolute;
@@ -361,32 +388,36 @@ color: #0EAD69;
 .fade {
 
     animation-name: fade;
-  animation-duration: 1.5s;
+    animation-duration: 1.5s;
 }
 
 @keyframes fade {
-    from {opacity: .6} 
-    to {opacity: 1}
-  }
+    from {
+        opacity: .6
+    }
+
+    to {
+        opacity: 1
+    }
+}
 
 
-  .middle-child-container span {
+.middle-child-container span {
 
 
     line-height: 25px;
-    color:hsl(219, 9%, 45%);
-    
+    color: hsl(219, 9%, 45%);
+
 }
-  
-#price-total, #dollar {
+
+#price-total,
+#dollar {
 
     font-weight: 700;
     color: hsl(220, 13%, 13%);
 }
 
-#dollar {
-
-}
+#dollar {}
 
 
 .checkout {
@@ -410,38 +441,46 @@ color: #0EAD69;
 
 
 
+
 /* Modal */
 
 
 .modal {
     width: 100%;
-    position: fixed; /* Stay in place */
-    z-index: -1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+    position: fixed;
+    /* Stay in place */
+    z-index: -1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
     left: 0;
     top: 0;
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.6);
+    /* Black w/ opacity */
     transition: .3s;
     opacity: 0;
-  }
+}
 
-    .transitionm {
+.transitionm {
 
-        z-index: 2;
-        opacity: 1;
-        
+    z-index: 2;
+    opacity: 1;
 
-    }
 
-    .transitionwidth {
+}
 
-        width: 210px !important;
-    }
-  
-  .nav-modal {
+.transitionwidth {
+
+    width: 210px !important;
+}
+
+.nav-modal {
 
     position: absolute;
     z-index: 3;
@@ -456,29 +495,50 @@ color: #0EAD69;
     padding: 25px 0 0 25px;
     gap: 50px;
     transition: .3s;
-  }
+}
 
-  .bottom-mobile-nav {
+.bottom-mobile-nav {
 
     display: flex;
     flex-direction: column;
     font-weight: 700;
     color: hsl(220, 13%, 13%);
     gap: 20px;
-  }
+}
 
-  .left-right {
+.left-right {
 
     display: none;
-  }
-  
+}
 
- @media screen and (min-width: 500px) {
 
-    
+.light-box-modal {
+
+    position: fixed;
+    top: 0;
+    visibility: hidden;
+
+
+}
+
+.slide-wrapper {
+
+    display: none;
+}
+
+
+
+@media screen and (min-width: 500px) {
+
+    body {
+
+        background-color: white;
+    }
+
     main {
 
-        width: 100%;
+        width: 100vw;
+
     }
 
     .smiths {
@@ -487,35 +547,33 @@ color: #0EAD69;
         box-sizing: border-box;
     }
 
-    #hamburger-open {
 
-        display: none;
-    }
 
     #logo {
-        
-        margin: 0;
+
+        margin-left: 15px;
     }
 
-   #avatar {
+    #avatar {
 
-    width: 50px;
-    margin-lefT: 30px;
+        width: 50px;
+        margin-lefT: 30px;
+        margin-right: 15px;
 
-   }
+    }
 
-   #avatar:hover {
+    #avatar:hover {
 
-    outline: 2px solid #0EAD69;
-    border-radius: 50%;
+        outline: 2px solid #0EAD69;
+        border-radius: 50%;
 
-   }
+    }
 
-   .right {
+    .right {
 
-    align-items: center;
-    display: flex;
-   }
+        align-items: center;
+        display: flex;
+    }
 
     #cart {
 
@@ -524,19 +582,45 @@ color: #0EAD69;
 
     #notification {
 
-        right: 80px;
-        top: 1px;
+        right: 102px;
+        top: 4px;
 
-        
+
+    }
+
+    .btns-container {
+
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    #anim-btn,
+    .product-count {
+
+        margin: 0;
+
+    }
+
+    #hamburger-close {
+
+        margin-top: 15px;
+        margin-right: 5px;
     }
 
 
-    
- }
+}
 
 
- @media screen and (min-width: 700px) {
+@media screen and (min-width: 800px) {
 
+
+
+    #hamburger-open {
+
+        display: none;
+
+    }
 
     .left-right {
 
@@ -548,10 +632,11 @@ color: #0EAD69;
         display: flex;
         gap: 40px;
         align-items: center;
+        
     }
 
     .left a {
-        
+
         display: inline-flex;
         margin-right: 40px;
         
@@ -560,30 +645,43 @@ color: #0EAD69;
 
     .left a:hover {
         cursor: pointer;
-        text-decoration:  #0EAD69 4px underline;
+        text-decoration: #0EAD69 4px underline;
         text-underline-offset: 46px;
     }
 
 
- }
 
- @media screen and (min-width: 1200px) {
+
+}
+
+
+@media screen and (min-width: 1200px) {
+
+
+    .main-container {
+
+        gap: 150px !important;
+    }
+
+}
+
+@media screen and (min-width: 1050px) {
 
 
     .main-container {
 
         display: flex;
         justify-content: center;
-       margin-top: 100px;
-       gap: 150px;
-       align-items: center;
-        
+        margin-top: 100px;
+        gap: 50px;
+        align-items: center;
+
     }
 
     .checkout-modal {
 
         justify-content: flex-end;
-        
+
     }
 
 
@@ -597,13 +695,13 @@ color: #0EAD69;
 
         width: 520px;
         border-radius: 5px;
-        
+
     }
 
     main {
 
         width: 100%;
-        
+
     }
 
     .info {
@@ -611,17 +709,17 @@ color: #0EAD69;
         width: 430px;
     }
 
-    body{
-        
+    body {
+
         background-color: white;
-        
+
     }
 
     .nav {
 
         padding: 30px 60px 30px 60px;
         border-bottom: 1px solid hsl(220, 14%, 89%);
-        
+
     }
 
     .price-container {
@@ -639,7 +737,8 @@ color: #0EAD69;
         gap: 20px;
     }
 
-    #anim-btn, .product-count {
+    #anim-btn,
+    .product-count {
 
         margin: 0;
 
@@ -660,7 +759,7 @@ color: #0EAD69;
 
         padding-left: 10px;
     }
-    
+
 
     .product-count {
 
@@ -681,9 +780,9 @@ color: #0EAD69;
     }
 
     .left a {
-        
+
         margin-right: 50px;
-        
+
 
     }
 
@@ -691,6 +790,7 @@ color: #0EAD69;
 
         display: flex;
         flex-direction: column;
+
     }
 
     .columns {
@@ -698,23 +798,206 @@ color: #0EAD69;
         display: flex;
         justify-content: space-between;
         margin-top: 35px;
-        
-        
+
+
     }
 
-    .columns img {
+    .column-img {
         border-radius: 5px;
         width: 100px;
         opacity: .6;
         transition: .2s;
     }
 
-    .columns img:hover {
+    .active,
+    .column-img:hover {
+
+        cursor: pointer;
+        opacity: 1;
+
+    }
+
+    .column-img-light {
+        border-radius: 5px;
+        width: 100px;
+        opacity: .5;
+        transition: .2s;
+    }
+
+    .active,
+    .column-img-light:hover {
 
         cursor: pointer;
         opacity: 1;
     }
 
+    
+    
+
+
+    .slideshow {
+
+        cursor: pointer;
+    }
+
+
+    .slideshow-container-lightbox {
+
+        position: relative;
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 620px;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+
+    .light-box-modal {
+
+        width: 100%;
+        position: fixed;
+        /* Stay in place */
+        z-index: 1;
+        /* Sit on top */
+        padding-top: 100px;
+        /* Location of the box */
+        left: 0;
+        top: 0;
+        height: 100%;
+        /* Full height */
+        overflow: auto;
+        /* Enable scroll if needed */
+        background-color: rgb(0, 0, 0);
+        /* Fallback color */
+        background-color: rgba(0, 0, 0, 0.8);
+        /* Black w/ opacity */
+        opacity: 0;
+        z-index: -1;
+
+    }
+
 
     
- }
+    .active-light {
+        visibility: visible;
+        opacity: 1;
+        z-index: 1;
+        transition: .4s;
+
+        
+    }
+
+
+    main {
+
+        height: 100vh;
+    }
+
+    
+    .light-close {
+
+
+        position: absolute;
+        right: 0;
+        top: -50px;
+        width: 22px;
+        cursor: pointer;
+        filter: invert(86%) sepia(100%) saturate(0%) hue-rotate(53deg) brightness(100%) contrast(500%);
+
+    }
+
+
+    
+
+    .slideshow-lightbox {
+
+        position: relative;
+
+
+    }
+
+
+    #prev-light,
+    #next-light {
+
+        cursor: pointer;
+        position: absolute;
+        top: 45%;
+        background-color: white;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        width: 30px;
+        text-align: center;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        user-select: none;
+        padding-left: 5px;
+        padding-right: 5px;
+
+    }
+
+    #prev-light {
+
+        left: 0px;
+        border-radius: 0px 5px 5px 0px;
+
+    }
+
+    #next-light {
+
+        right: 0;
+        border-radius: 5px 0px 0px 5px;
+
+
+    }
+
+    .mySlidesLight {
+
+        display: none;
+
+    }
+
+    .smiths-light {
+
+        width: 620px;
+        border-radius: 5px;
+    }
+
+    .columns-light {
+
+        display: flex;
+        gap: 40px;
+        margin-top: 40px;
+
+    }
+
+    .slide-wrapper {
+
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        cursor: zoom-in;
+        z-index: 1;
+    }
+
+    
+
+
+  
+
+    
+
+    #prev, #next {
+
+        display: none;
+    }
+   
+
+
+    
+
+}

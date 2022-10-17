@@ -32,8 +32,8 @@
         <div class="left">
 
           <div class="left-left">
-          <img class="hamburger-btn" id="hamburger-open" src="./images/icon-menu.svg">
-          <img id="logo" src="./images/logo.svg">
+          <img class="hamburger-btn" id="hamburger-open" src="./images/icon-menu.svg" alt="Hamburger Icon">
+          <img id="logo" src="./images/logo.svg" alt="Company Logo">
             </div>
 
             <div class="left-right">
@@ -48,9 +48,9 @@
         </div>
 
         <div class="right">
-          <span id="notification">3</span>
-          <img class="mobile-btn" id="cart" src="./images/icon-cart.svg">
-          <img class="mobile-btn" id="avatar" src="./images/image-avatar.png">
+          <span class="mobile-btn" id="notification">3</span>
+          <img class="mobile-btn" id="cart" src="./images/icon-cart.svg" alt="Cart Icon">
+          <img class="mobile-btn" id="avatar" src="./images/image-avatar.png" alt="Avatar Icon">
 
 
         </div>
@@ -73,7 +73,7 @@
 
             <div class="top">
               <span>Cart</span>
-              <div id="close-test" class="mobile-btn"><img src="./images/icon-close.svg"></div>
+              <div id="close-test" class="mobile-btn"><img src="./images/icon-close.svg" alt="Close Icon"></div>
             </div>
             <div id="empty" class="bottom">
 
@@ -86,7 +86,7 @@
               <div class="top-child-container">
 
                 <div class="left-child-continer">
-                  <img id="smiths1" src="./images/smiths1.jpg">
+                  <img id="smiths1" src="./images/smiths1.jpg" Alt="Smiths Trainers">
 
                 </div>
 
@@ -99,7 +99,7 @@
                 </div>
 
                 <div class="right-child-container">
-                  <img id="trash" src="./images/icon-delete.svg">
+                  <img id="trash" src="./images/icon-delete.svg" alt="Trash Can">
 
                 </div>
 
@@ -116,44 +116,48 @@
 
         <div class="slideshow-container">
 
+
         <div class="slideshow">
 
           <div class="mySlides fade">
 
-            <img class="smiths" src="./images/green1.jpg">
+            <img class="smiths" src="./images/green1.jpg" Alt="Smiths Trainers">
 
           </div>
 
           <div class="mySlides fade">
 
-            <img class="smiths" src="./images/green2.jpg">
+            <img class="smiths" src="./images/green2.jpg" Alt="Smiths Trainers">
 
           </div>
 
           <div class="mySlides fade">
 
-            <img class="smiths" src="./images/green3.jpg">
+            <img class="smiths" src="./images/green3.jpg" Alt="Smiths Trainers">
 
           </div>
 
           <div class="mySlides fade">
 
-            <img class="smiths" src="./images/smiths1.jpg">
+            <img class="smiths" src="./images/smiths1.jpg" Alt="Smiths Trainers">
 
           </div>
 
           <div class="scroll-container">
-            <a id="prev" onclick="plusSlides(-1)"><img src="./images/icon-previous.svg"></a>
-            <a id="next" onclick="plusSlides(1)"> <img src="./images/icon-next.svg"></a>
+            <a class="scroll-btns" id="prev" onclick="plusSlides(-1)"><img src="./images/icon-previous.svg" alt="previous button"></a>
+            <a class="scroll-btns" id="next" onclick="plusSlides(1)"> <img src="./images/icon-next.svg" alt="next button"></a>
           </div>
+
+          <div id="slide-wrap" class="slide-wrapper"></div>
+          
         </div>
 
         <div class="columns">
 
-          <img class="column-img"   src="./images/green1.jpg">
-          <img class="column-img"  src="./images/green2.jpg">
-          <img class="column-img"  src="./images/green3.jpg">
-          <img class="column-img" src="./images/smiths1.jpg">
+          <img class="column-img" onclick="currentSlide(1)"  src="./images/green1.jpg" Alt="Smiths Trainers">
+          <img class="column-img" onclick="currentSlide(2)"  src="./images/green2.jpg" Alt="Smiths Trainers">
+          <img class="column-img" onclick="currentSlide(3)" src="./images/green3.jpg" Alt="Smiths Trainers">
+          <img class="column-img" onclick="currentSlide(4)" src="./images/smiths1.jpg" Alt="Smiths Trainers">
 
         </div>
       </div>
@@ -187,7 +191,7 @@
               </span></div>
 
 
-            <button id="anim-btn" class="checkout"><img class="cart-svg" src="./images/icon-cart.svg">Add to
+            <button id="anim-btn" class="checkout"><img class="cart-svg" src="./images/icon-cart.svg" alt="shopping cart">Add to
               cart</button>
           </div>
         </div>
@@ -207,7 +211,7 @@
 
     <div id="mob-nav" class="nav-modal slide">
       <div class="top-mobile-nav">
-        <img class="hamburger-btn" id="hamburger-close" src="./images/icon-close.svg">
+        <img class="hamburger-btn" id="hamburger-close" src="./images/icon-close.svg" alt="hamburger icon">
       </div>
 
       <div class="bottom-mobile-nav">
@@ -225,7 +229,98 @@
 
   </div>
 
+
+  <div id="lightbox-modal" class="light-box-modal">
+
+
+    <div class="slideshow-container-lightbox">
+
+
+
+      <div class="slideshow-lightbox">
+
+        <img id="light-x" class="light-close" src="./images/icon-close.svg" alt="close icon">
+
+
+        <div class="mySlidesLight">
+
+          <img class="smiths-light" src="./images/green1.jpg" Alt="Smiths Trainers">
+
+        </div>
+
+        <div class="mySlidesLight">
+
+          <img class="smiths-light" src="./images/green2.jpg" Alt="Smiths Trainers">
+
+        </div>
+
+        <div class="mySlidesLight">
+
+          <img class="smiths-light" src="./images/green3.jpg" Alt="Smiths Trainers">
+
+        </div>
+
+        <div class="mySlidesLight">
+
+          <img class="smiths-light" src="./images/smiths1.jpg" Alt="Smiths Trainers">
+
+        </div>
+
+        <div class="scroll-container">
+          <a id="prev-light" onclick="plusSlidesLight(-1)"><img src="./images/icon-previous.svg" alt="previous button"></a>
+          <a id="next-light" onclick="plusSlidesLight(1)"> <img src="./images/icon-next.svg" alt="next button"></a>
+        </div>
+      </div>
+
+      <div class="columns-light">
+
+        <img class="column-img-light" onclick="currentSlideLight(1)"  src="./images/green1.jpg" Alt="Smiths Trainers">
+        <img class="column-img-light" onclick="currentSlideLight(2)"  src="./images/green2.jpg" Alt="Smiths Trainers">
+        <img class="column-img-light" onclick="currentSlideLight(3)" src="./images/green3.jpg" Alt="Smiths Trainers">
+        <img class="column-img-light" onclick="currentSlideLight(4)" src="./images/smiths1.jpg" Alt="Smiths Trainers"> 
+
+      </div>
+    </div>
+
+
+  </div>
+
   <script src="./script.js"></script>
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
 
 </html>
