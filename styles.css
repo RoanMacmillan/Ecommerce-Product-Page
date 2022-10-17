@@ -665,7 +665,7 @@ p {
 
 }
 
-@media screen and (min-width: 1050px) {
+@media screen and (min-width: 950px) {
 
 
     .main-container {
@@ -693,7 +693,8 @@ p {
 
     .smiths {
 
-        width: 520px;
+        width: 420px;
+        
         border-radius: 5px;
 
     }
@@ -962,6 +963,7 @@ p {
     .smiths-light {
 
         width: 620px;
+        
         border-radius: 5px;
     }
 
