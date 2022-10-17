@@ -153,6 +153,7 @@ a:hover {
 .smiths {
 
     width: 375px;
+    
 }
 
 .nav {
@@ -805,9 +806,10 @@ p {
 
     .column-img {
         border-radius: 5px;
-        width: 100px;
+        width: 80px;
         opacity: .6;
         transition: .2s;
+        
     }
 
     .active,
